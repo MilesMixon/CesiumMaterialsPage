@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Materials</title>
+        
+        <link rel="stylesheet" type="text/css" href="Materials.css"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="/Materials.js"></script>
+    </head>
+    <body>
+        <h1>Materials</h1>
+        <div id="content">
+            <div id="buttons">
+                <!--The buttons add and delete-->
+                <button id="addBtn" onclick="addMat();">Add</button>
+                <button id="deleteBtn" onclick="deleteMat();">Delete</button>
+                <p id="totalValue"></p>
+            </div>
+            <div id="tables">
+                <!--Holds the side list of materials, and the form that the user fills in about each material-->
+                <div id="matList" style="display: inline-block;" class="infoTable"></div>
+                <div id="matInfo" style="display: inline-block;" class="infoForm"></div>
+            </div>
+        </div>
+    </body>
+</html>
